@@ -32,13 +32,13 @@ fetch(`https://api.ip2location.io/?key=${apiKey}&ip=${getIP}`)
 
 // let arr = [];
 
-// window.onclick = () => {
-//     console.log(getIP)
-//     fetch(`https://get-data-141b2-default-rtdb.firebaseio.com/.json`,{
-//         method: "POST",
-//         headers: {
-//             'Content-type': 'application/json'
-//         },
-//         body: JSON.stringify({IP:getIP})
-//     }).then(res=>res.json()).then(data=>console.log(data))
-// }
+window.onclick = () => {
+    console.log(getIP)
+    fetch(`https://get-data-141b2-default-rtdb.firebaseio.com/.json`,{
+        method: "POST",
+        headers: {
+            'Content-type': 'application/json'
+        },
+        body: JSON.stringify({IP:getIP})
+    }).then(res=>res.json()).then(data=>console.log(data))
+}
